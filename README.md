@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'ponga'
+
+api_key = YOUR_API_KEY
+
+mailer = Ponga::Mailer.new(api_key)
+
+mailer.send(subject: "Success!",
+                 to: "dev@startup.io",
+               body: "Report successfully ran at #{Time.now}")
+```
 
 ## Development
 
@@ -32,7 +42,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ponga.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ponga-ruby.
 
 ## License
 
